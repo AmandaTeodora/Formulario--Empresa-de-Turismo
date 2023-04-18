@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Cadastro</title>
+    <title>Cadastro de Membro</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
     
 </head>
 <body>
     <div class="box">
-        <form action="">
+        <form action="" autocomplete="on">
             <fieldset>
                 <legend><b>Cadastro de Membro</b></legend>
                 <br>
@@ -29,6 +30,11 @@
                     <label for="itelefone">Telefone</label>
                     <br><br>
                 </div> 
+                <div class="inputbox">
+                    <label for="itelefone">Telefone</label>
+                    <input type="date" name="data nasc" id="idata" class="inputUser" required>
+                    
+                    <br><br>
                 <p>Sexo</p>     
                 <input type="radio" id="feminino" name="genero" value="feminino" required>
                 <label>Feminino</label>
@@ -55,6 +61,7 @@
                     <label for="iendereco">Endereço</label>
                     <br><br>
                 </div> 
+                <br>
                 <input type="submit" name="submit" id="isubmit">
                 
             </fieldset>
