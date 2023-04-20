@@ -1,6 +1,6 @@
-
+<link rel="stylesheet" type="text/css" href="style.css">
 *{
-    background-color:  rgb(20, 147, 220);
+    background-color:  rgb(179, 194, 202);
     font-family: Arial, Helvetica, sans-serif;
     
 }
@@ -16,14 +16,14 @@ form{
     width: 20%;
 }
  fieldset{
-    border: 3px solid yellow;
+    border: 3px solid rgb(53, 53, 51);
  }
 
  legend{
-    border: 1px solid red;
+    border: 1px solid rgb(99, 96, 96);
     padding: 10px;
     text-align: center;
-    background-color: orange;
+    background-color: rgb(73, 67, 56);
     border-radius: 15px;
  }
  .inputbox{
@@ -34,5 +34,20 @@ form{
     border: none;
     border-bottom: 1px solid white;
 }
+.labelinput{
+  position: relative;
+  top: 0px;
+  left: 0px;  
+  pointer-events: none;
+  transition: .5s;
 
+}
+.inputUser:focus ~ .labelinput {
+    top: -20px;
+    font-size: 12px;
+    color: blueviolet;
+
+}
+
+}
 
