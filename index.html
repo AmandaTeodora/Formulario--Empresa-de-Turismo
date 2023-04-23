@@ -5,69 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shatcut icon" href="icona.png" type="image/x-icon">
-    <title>Cadastro de Membro</title>
-   
-    <style>
-body{ 
-    font-family: Arial, Helvetica, sans-serif;
-   
-}
-.box{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: rgb(189, 182, 188);
-    padding: 15px;
-    border-radius: 5px;    
-    width: 20%;
-}
- fieldset{
-    border: 3px solid whitesmoke;
- }
-
- legend{
-    border: 1px solid white;
-    padding: 10px;
-    text-align: center;
-    background-color: white;
-    border-radius: 5px;
- }
-.inputbox{
-    position: relative;
-}
-.inputUser{
-    background: none;
-    border: none;
-    border-bottom: 1px solid white;
-    outline: none;
-    color: rgb(17, 16, 16);
-    font-size: 15px;
-    width: 100%;
-}
-.labelinput{
-  position: relative;
-  top: 0px;
-  left: 0px;  
-  pointer-events: none;
-  transition: .5s;
-
-}
-.inputUser:focus ~ .labelinput,
-.inputUser:valid ~ .labelinput {
-    top: -20px;
-    font-size: 12px;
-    color: blueviolet;
-
-}
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+       
     
 </head>
 <body>
+    
     <div class="box">
+        <img src="imagens/turist.png" alt="praia" class="imagem">
         <form action="" autocomplete="on">
             <fieldset>
-                <legend><b>Cadastro de Membro</b></legend>
+                <legend><b>Cadastre-se</b></legend>
                 <br>
                 <div class="inputbox">
                     <input type="text" name="nome" id="inome" class="inputUser" required>
@@ -82,22 +31,21 @@ body{
                 <div class="inputbox">
                     <input type="tel" name="telefone" id="itelefone" class="inputUser" required>
                     <label for="itelefone" class="labelinput">Telefone</label>
-                    <br><br>
+                    <br>
                 </div> 
-                <div class="inputbox">
-                    <label for="itelefone"><b>Data de Nascimento</b></label>
-                    <input type="date" name="data nasc" id="idata" class="inputUser" required>
-                    <br><br>
-
                     <p>Sexo</p>     
                     <input type="radio" id="feminino" name="genero" value="feminino" required>
                     <label>Feminino</label>
+                    <br>
                     <input type="radio" id="masculino" name="genero" value="masculino" required>
                     <label>Masculino</label>
+                    <br>
                     <input type="radio" id="outro" name="genero" value="outro" required>
                     <label>Outro</label>
                     <br><br>
-
+                    <label for="text"><b>Data de Nascimento</b></label>
+                    <input type="date" name="data nasc" id="idata" class="datanasc" required>
+                    <br><br><br>
                 <div class="inputbox">
                     <input type="text" name="cidade" id="icidade" class="inputUser" required>
                     <label for="icidade" class="labelinput">Cidade</label>
