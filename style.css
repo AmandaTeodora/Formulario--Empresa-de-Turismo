@@ -1,41 +1,42 @@
-*
-
-body{
-        font-family: Arial, Helvetica, sans-serif;
-        background-image: linear-gradient(to right, rgb(251, 254, 255), rgb(20,140,220));
+ body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(252, 255, 252), hwb(219 31% 11%));
     
-}
-
-.box{
-    color: rgb(8, 114, 185);
-    position: absolute;
-    border-radius: 10px;
-    top: 50%;
-    left: 70%;
-    transform: translate(-50%,-50%);
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    border-radius: 5px;    
-    width: 30%;
 }
 .imagem{
-    width: 100%;
-    
+  width: 550px;
+  justify-content: center;
+  display: inline-block;
+  align-items: center;
 }
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box { 
+    display: inline-block;
+    top: 50%;
+    background-color: rgb(248, 246, 246);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px;
+    width: 30%;
+   }
+  
  fieldset{
-    border: 3px solid rgb(7, 128, 209);
-    
-   
+    border: 3px solid hwb(219 18% 12%);
+       
  }
 
  legend{
-
-    border: 1px solid rgb(20,140,220);
-    padding: 10px;
+    border: 1px solid hwb(219 18% 12%); ;
+    padding: 5px;
     text-align: center;
-    background-color:   rgb(20,140,220);
+    background-color:   hwb(219 18% 12%);
     border-radius: 5px;
     color: white;
+    box-shadow: 3px 3px 3px black;
  }
  .inputbox{
     position: relative;
@@ -72,20 +73,21 @@ body{
     border-radius: 10px;
     outline: none;
     font-size: 15px;
-    background-color: rgb(164, 214, 247);
+    color: white;
+    background-color: hwb(219 18% 12%);
 }
 #isubmit{
-    background-image: linear-gradient(to right, rgb(251, 254, 255), rgb(20,140,220));
+    background-image: linear-gradient(to right, rgb(213, 232, 238), hwb(219 18% 12%));
     width: 100%;
     padding: 15px;
     border: none;
     border-radius: 10px;
-    color: black;
+    color: white;
     font-size: 15px;
     cursor: pointer;
 }
 #isubmit:hover{
-    background-image: linear-gradient(to right, rgb(16, 182, 238), rgb(11, 88, 139));
+    background-image: linear-gradient(to right, rgb(226, 228, 241), hwb(219 18% 12%));
 }
 
 
