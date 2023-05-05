@@ -5,14 +5,16 @@
 }
 .imagem{
   width: 550px;
-  justify-content: center;
-  display: inline-block;
+  display: block;
   align-items: center;
+
+  
 }
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5em;
 }
 .box { 
     display: inline-block;
